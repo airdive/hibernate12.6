@@ -29,7 +29,7 @@ public class CreateSub extends HttpServlet {
 		MainDAORef.getSession().close();
 
 		Sub SubRef = new Sub();
-		SubRef.setSubContent("�����ӱ�Ĵ��ı�");
+		SubRef.setSubContent("我是子表的大文本");
 		SubRef.setCreatetime(new Date());
 		SubRef.setMain(mainRef);
 
