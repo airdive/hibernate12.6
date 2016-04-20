@@ -16,7 +16,7 @@ public class Main implements java.io.Serializable {
 	private String title;
 	private String content;
 	private Date createtime;
-	private Set subs = new HashSet(0);
+	private Set<Sub> subs = new HashSet<Sub>(0);
 
 	// Constructors
 
@@ -30,7 +30,7 @@ public class Main implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Main(String title, String content, Date createtime, Set subs) {
+	public Main(String title, String content, Date createtime, Set<Sub> subs) {
 		this.title = title;
 		this.content = content;
 		this.createtime = createtime;
@@ -71,11 +71,11 @@ public class Main implements java.io.Serializable {
 		this.createtime = createtime;
 	}
 
-	public Set getSubs() {
+	public Set<Sub> getSubs() {
 		return this.subs;
 	}
 
-	public void setSubs(Set subs) {
+	public void setSubs(Set<Sub> subs) {
 		this.subs = subs;
 	}
 
